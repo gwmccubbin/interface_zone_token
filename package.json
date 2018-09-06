@@ -1,0 +1,29 @@
+{
+  "name": "interface_zone_token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "scripts/test.sh",
+    "deploy": "truffle migrate --reset --network $NETWORK",
+    "compile": "truffle compile",
+    "flatten": "bash flatten.sh",
+    "watch-tests": "./node_modules/.bin/nodemon ./node_modules/.bin/truffle test --network test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ganache-cli": "^6.1.0",
+    "openzeppelin-solidity": "^1.9.0",
+    "truffle": "^4.1.8",
+    "web3-utils": "^1.0.0-beta.34"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "nodemon": "^1.17.3",
+    "solidity-coverage": "^0.4.15",
+    "truffle-flattener": "^1.2.3"
+  }
+}
